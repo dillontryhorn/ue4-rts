@@ -13,9 +13,9 @@
 #include "RTSOwnerComponent.h"
 
 
-void ARTSCharacterAIController::Possess(APawn* InPawn)
+void ARTSCharacterAIController::OnPossess(APawn* InPawn)
 {
-    Super::Possess(InPawn);
+    Super::OnPossess(InPawn);
 
 	AttackComponent = InPawn->FindComponentByClass<URTSAttackComponent>();
 

@@ -255,7 +255,7 @@ void ARTSGameMode::TransferOwnership(AActor* Actor, AController* NewOwner)
 
         if (Pawn)
         {
-            Pawn->bCanBeDamaged = !PlayerAdvantageComponent->bGodModeEnabled;
+            Pawn->SetCanBeDamaged(!PlayerAdvantageComponent->bGodModeEnabled);
         }
     }
 
